@@ -1,0 +1,43 @@
+.c-song-item {
+    display: flex;
+    height: 60px;
+    cursor: default;
+    // &:hover,
+    &.active {
+        background-color: antiquewhite;
+    }
+    &-add {
+        width: 50px;
+        flex: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+    }
+    &-content {
+        width: 230px;
+        flex: none;
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+        justify-content: space-around;
+        &-name {
+            width: 100%;
+            font-size: 16px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;;
+        }
+        &-artist {
+            font-size: 12px;
+            color: #aaa;
+        }
+    }
+    &-highlight {
+        color: sandybrown;
+    }
+}

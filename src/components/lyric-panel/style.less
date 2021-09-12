@@ -1,0 +1,40 @@
+.c-lyric-panel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    &-name {
+        font-size: 36px;
+    }
+    &-artist {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 10px;
+    }
+    &-lyric {
+        flex: none;
+        height: calc(100% - 85px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: scroll;
+        &-item {
+            flex: none;
+            height: 30px;
+            font-size: 16px;
+            position: relative;
+            margin-bottom: 10px;
+            overflow: hidden;
+            background-size: 0 100%;
+            background: #ccc -webkit-linear-gradient(left, #000, #000) no-repeat 0 0;
+            // 
+            -webkit-text-fill-color: transparent;
+            //     
+            -webkit-background-clip: text;
+        }
+    }
+    &-empty {
+        margin-top: 10px;
+        font-size: 20px;        
+    }
+}
