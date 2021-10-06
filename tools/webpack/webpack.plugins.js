@@ -5,7 +5,7 @@ module.exports = [
     new ForkTsCheckerWebpackPlugin(),
     new CopyPlugin({
         patterns: [
-            { from: "data", to: "data" },
+            { from: "tmpl", to: "tmpl" },
         ],
     }),
 ];

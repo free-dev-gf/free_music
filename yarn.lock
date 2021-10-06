@@ -4086,6 +4086,11 @@ junk@^3.1.0:
   resolved "https://registry.nlark.com/junk/download/junk-3.1.0.tgz?cache=0&sync_timestamp=1627497036319&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fjunk%2Fdownload%2Fjunk-3.1.0.tgz"
   integrity "sha1-MUmQmNkCt+mMXZucgPQ0V6iKv6E= sha512-pBxcB3LFc8QVgdggvZWyeys+hnrNWg4OcZIU/1X59k5jQdLBlCsYGRQaz234SqoRLTCgMH00fY0xRJH+F9METQ=="
 
+keyboardjs@^2.6.4:
+  version "2.6.4"
+  resolved "https://registry.npmjs.org/keyboardjs/-/keyboardjs-2.6.4.tgz#28dccd9787c8f37e7c017df2f87294ca21143436"
+  integrity sha512-xDiNwiwH3KUqap++RFJiLAXzbvRB5Yw08xliuceOgLhM1o7g1puKKR9vWy6wp9H/Bi4VP0+SQMpiWXMWWmR6rA==
+
 keyv@^3.0.0:
   version "3.1.0"
   resolved "https://registry.npm.taobao.org/keyv/download/keyv-3.1.0.tgz?cache=0&sync_timestamp=1600337477435&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fkeyv%2Fdownload%2Fkeyv-3.1.0.tgz"

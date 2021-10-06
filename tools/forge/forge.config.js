@@ -8,9 +8,10 @@ module.exports = {
     // Create asar archive for main, renderer process files
     asar: true,
     // Set executable name
-    executableName: 'FreeMusic',
+    executableName: 'FreeMusic123',
     // Set application copyright
     appCopyright: 'Copyright (C) 2021',
+    icon: path.resolve(__dirname, `../../static/logo.${process.platform === 'darwin' ? 'icns' : 'ico'}`),
   },
   // Forge Makers
   makers: [
