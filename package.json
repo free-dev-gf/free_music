@@ -9,8 +9,7 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "eslint --ext .ts .",
-    "install": "set ELECTRON_MIRROR=http://npm.taobao.org/mirrors/electron/ && node ./node_modules/electron/install.js"
+    "lint": "eslint --ext .ts ."
   },
   "keywords": [
     "minimal",
@@ -28,7 +27,7 @@
     "forge": "./tools/forge/forge.config.js"
   },
   "author": {
-    "name": "gaofeifly"
+    "name": "free-dev-gf"
   },
   "devDependencies": {
     "@electron-forge/cli": "6.0.0-beta.60",
@@ -47,7 +46,7 @@
     "copy-webpack-plugin": "^9.0.1",
     "cross-env": "^7.0.3",
     "css-loader": "^6.2.0",
-    "electron": "^14.0.0",
+    "electron": "^15.0.0-beta.5",
     "eslint": "^7.32.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.24.2",
