@@ -1,7 +1,8 @@
-import React, { useRef, useState } from 'react';
-import { Popover, Input, Select } from 'antd';
+import React, { useState } from 'react';
+import { Popover, Input } from 'antd';
 import orderIcon from '@assets/images/order.svg';
 import randomIcon from '@assets/images/random.svg';
+import pointIcon from '@assets/images/point.svg';
 import './style.less';
 import { SearchOutlined } from '@ant-design/icons';
 
@@ -15,6 +16,7 @@ type Props = {
     onPlayModeChange: (mode: EPlayMode) => void;
     onSearch: (keyword: string) => void;
     onCancel: () => void;
+    onPoint: () => void;
 };
 
 const playModes = [{
@@ -28,7 +30,7 @@ const playModes = [{
 }]
 
 const SearchBox: React.FC<Props> = (props) => {
-    const { playMode, onPlayModeChange, onSearch, onCancel } = props;
+    const { playMode, onPlayModeChange, onSearch, onCancel, onPoint } = props;
     const [showSearch, setShowSearch] = useState(false);
 
     const renderModeItem = (name: string, icon: any) => {
@@ -85,10 +87,13 @@ const SearchBox: React.FC<Props> = (props) => {
                     </div>
                 </div>
             ) : (
+                <div className="c-search-box-icons">
+                <img src={pointIcon} onClick={onPoint} />
                 <SearchOutlined
                     style={{ fontSize: 16 }}
                     onClick={() => setShowSearch(true)}
                 />
+                </div>
             )}
         </div>
     );

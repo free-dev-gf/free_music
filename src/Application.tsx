@@ -231,7 +231,6 @@ const Application: React.FC<Props> = (props) => {
         ele.src = addImg;
         document.body.appendChild(ele);
         const tween = new TWEEN.Tween(coords)
-            // @ts-ignore
             .to({ x: endX, y: endY }, 600)
             .easing(TWEEN.Easing.Quadratic.In)
             .onUpdate(() => {
@@ -248,6 +247,14 @@ const Application: React.FC<Props> = (props) => {
         .replace('.mp3', '')
         .split('-')
         .map((a) => a.trim());
+
+    const handleSongPoint = () => {
+        const index = renderSongs.findIndex((s) => currentPlay === s);
+        document.querySelectorAll('.c-song-item')[index]?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
+        });
+    };
 
     return (
         <div className='free-music'>
@@ -270,6 +277,7 @@ const Application: React.FC<Props> = (props) => {
                         onPlayModeChange={changePlayMode}
                         onSearch={searchMusic}
                         onCancel={onCancelSearch}
+                        onPoint={handleSongPoint}
                     />
                     <div className='free-music-content-song-list'>
                         {renderSongs.map((completeName, idx) => {
